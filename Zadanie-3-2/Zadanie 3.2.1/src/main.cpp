@@ -7,7 +7,7 @@ void dec_to_7seg(uint8_t dec);
 void setup() {
   for(uint8_t i=0; i<8; i++){
     pinMode(i, OUTPUT);
-    digitalWrite(i, HIGH);}
+    digitalWrite(i, HIGH);}Wykonano zadanie 3.2.1 – pojedynczy wyświetlacz
   
   for (uint8_t i=8; i<12; i++){
     pinMode(i, OUTPUT);
@@ -20,7 +20,7 @@ void loop(){
     dec_to_7seg(i);
     delay(1000);}
 }
-
+ 
 void dec_to_7seg(uint8_t dec){
   for(uint8_t i=0; i<8; i++){
     if (cyfra[dec] &(1<<i)){
