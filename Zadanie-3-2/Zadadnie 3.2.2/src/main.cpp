@@ -27,6 +27,7 @@ TCCR1A = 0;
 TCCR1B = 0;
 TCNT1 = 0;
 
+
 OCR1A = 125;
 TCCR1B |= (1<<WGM12);
 TCCR1B |= (1<<CS12);
